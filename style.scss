@@ -1,0 +1,174 @@
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ### Primary
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+// ### Neutral
+$white-paragraphs: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+// ## Typography
+
+// ### Body Copy
+$body-font-size: 1.5rem;
+$body-font-stack: 'Lexend Deca', sans-serif;
+$header-font-stack: 'Big Shoulders Display', cursive;
+
+html{font-size: 62.5%;}
+body 
+{
+    font-size: $body-font-size;
+    font-family: $body-font-stack;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-container 
+{
+    width: 90%;
+    max-width: 35rem;
+    box-sizing: border-box;
+    padding: 3rem 5.75rem 6rem 4.75rem;
+    color: $white-paragraphs;
+    border-style: none;
+    line-height: 2.5rem;
+
+    img 
+    {
+        margin-top: 2rem;
+    }
+
+    h1 
+    {
+        color: $very-light-gray;
+        font-family: $header-font-stack;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        font-size: 3.75rem;
+    }
+
+    p 
+    {
+        margin-top: 3rem;
+    }
+
+    button 
+    {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-family: $body-font-stack;
+        background-color: $very-light-gray;
+        border-style: none;
+        padding: 1.5rem 3.5rem;
+        border-radius: 3rem;
+    }
+}
+
+.sedans-container 
+{
+    background: $bright-orange;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+    button 
+    {
+        color: $bright-orange;
+        border: .25rem solid $bright-orange;
+
+        &:hover 
+        {
+            border-color: $white-paragraphs;
+            background: $bright-orange;
+            color: $white-paragraphs;
+        }
+    }
+}
+
+.suvs-container
+{
+    background: $dark-cyan;
+    
+    button 
+    {
+        color: $dark-cyan;
+        border: .25rem solid $dark-cyan;
+
+        &:hover 
+        {
+            border-color: $white-paragraphs;
+            background: $dark-cyan;
+            color: $white-paragraphs;
+        }
+    }
+}
+
+.luxury-container
+{
+    background: $very-dark-cyan;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    button 
+    {
+        color: $very-dark-cyan;
+        border: .25rem solid $very-dark-cyan;
+
+        &:hover 
+        {
+            border-color: $white-paragraphs;
+            background: $very-dark-cyan;
+            color: $white-paragraphs;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) 
+{
+    .main-container
+    {
+        flex-direction: row;
+    }    
+
+    .car-container
+    {
+        max-width: 30rem;
+        padding: 4rem 4.5rem 6rem;
+
+        button 
+        {
+            margin-top: 7rem;
+        }
+    }
+
+    .sedans-container 
+    {
+        background: $bright-orange;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .luxury-container
+    {   
+        background: $very-dark-cyan;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+}

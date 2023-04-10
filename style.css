@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-container {
+  width: 90%;
+  max-width: 35rem;
+  box-sizing: border-box;
+  padding: 3rem 5.75rem 6rem 4.75rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  border-style: none;
+  line-height: 2.5rem;
+}
+.car-container img {
+  margin-top: 2rem;
+}
+.car-container h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  font-size: 3.75rem;
+}
+.car-container p {
+  margin-top: 3rem;
+}
+.car-container button {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  border-style: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 3rem;
+}
+
+.sedans-container {
+  background: hsl(31, 77%, 52%);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.sedans-container button {
+  color: hsl(31, 77%, 52%);
+  border: 0.25rem solid hsl(31, 77%, 52%);
+}
+.sedans-container button:hover {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suvs-container {
+  background: hsl(184, 100%, 22%);
+}
+.suvs-container button {
+  color: hsl(184, 100%, 22%);
+  border: 0.25rem solid hsl(184, 100%, 22%);
+}
+.suvs-container button:hover {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury-container {
+  background: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.luxury-container button {
+  color: hsl(179, 100%, 13%);
+  border: 0.25rem solid hsl(179, 100%, 13%);
+}
+.luxury-container button:hover {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (min-width: 900px) {
+  .main-container {
+    flex-direction: row;
+  }
+  .car-container {
+    max-width: 30rem;
+    padding: 4rem 4.5rem 6rem;
+  }
+  .car-container button {
+    margin-top: 7rem;
+  }
+  .sedans-container {
+    background: hsl(31, 77%, 52%);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+  .luxury-container {
+    background: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
